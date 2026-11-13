@@ -1,0 +1,25 @@
+{
+  "A": {
+    "expected_chunks": 126,
+    "count_after_first_upsert": 126,
+    "count_after_second_upsert": 126,
+    "no_duplicates_verified": true
+  },
+  "B": {
+    "expected_chunks": 98,
+    "count_after_first_upsert": 98,
+    "count_after_second_upsert": 98,
+    "no_duplicates_verified": true
+  },
+  "C": {
+    "expected_chunks": 98,
+    "count_after_first_upsert": 98,
+    "count_after_second_upsert": 98,
+    "no_duplicates_verified": true
+  },
+  "obsolete_chunk_cleanup_test": {
+    "initial_doc_chunks": 3,
+    "after_doc_shrunk_to_2_chunks": 2,
+    "obsolete_chunk_removed_verified": true
+  }
+}

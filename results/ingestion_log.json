@@ -1,0 +1,623 @@
+{
+  "run_timestamp": "2026-11-13T12:13:36.956658+00:00",
+  "total_physical_pages": 43,
+  "valid_content_pages": 33,
+  "excluded_pages": 10,
+  "page_diagnostics": [
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 1,
+      "status": "excluded",
+      "reason": "cover_page",
+      "detail": "Trang bìa tài liệu (cover page) — loại trừ theo quy tắc đếm trang nội dung.",
+      "char_count": 408
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 2,
+      "status": "excluded",
+      "reason": "toc_page",
+      "detail": "Trang mục lục (table of contents) — loại trừ theo quy tắc đếm trang nội dung.",
+      "char_count": 1579
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 3,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "tuyen_sinh",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1667
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 4,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "dang_ky_tin_chi",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1570
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 5,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "hoc_phi_hoc_bong",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1544
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 6,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "danh_gia_diem",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1410
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 7,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "canh_bao_hoc_vu",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1434
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 8,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "nghi_hoc_tam_thoi",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1492
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 9,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "thuc_tap_do_an",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1251
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 10,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "ngoai_ngu_dau_ra",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1531
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 11,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "ky_luat_thi_cu",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1484
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 12,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "tot_nghiep",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1398
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 13,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "chuyen_nganh_song_bang",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1414
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 14,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "ho_tro_sinh_vien",
+      "year": 2025,
+      "category": "hoc_vu",
+      "char_count": 1619
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 15,
+      "status": "excluded",
+      "reason": "empty_or_unreadable_page",
+      "detail": "Trang trống hoặc không trích xuất được văn bản (0 ký tự < 50 ký tự tối thiểu).",
+      "char_count": 0
+    },
+    {
+      "document_id": "handbook-2025",
+      "source": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "page": 16,
+      "status": "excluded",
+      "reason": "references_page",
+      "detail": "Trang chỉ chứa danh mục tài liệu tham khảo (references only) — loại trừ theo quy tắc.",
+      "char_count": 544
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 1,
+      "status": "excluded",
+      "reason": "cover_page",
+      "detail": "Trang bìa tài liệu (cover page) — loại trừ theo quy tắc đếm trang nội dung.",
+      "char_count": 408
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 2,
+      "status": "excluded",
+      "reason": "toc_page",
+      "detail": "Trang mục lục (table of contents) — loại trừ theo quy tắc đếm trang nội dung.",
+      "char_count": 1371
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 3,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "tuyen_sinh",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1578
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 4,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "dang_ky_tin_chi",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1384
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 5,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "hoc_phi_hoc_bong",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1605
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 6,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "danh_gia_diem",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1396
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 7,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "canh_bao_hoc_vu",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1480
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 8,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "su_dung_ai_hoc_tap",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1744
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 9,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "thuc_tap_do_an",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1359
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 10,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "ngoai_ngu_dau_ra",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1378
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 11,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "hoc_truc_tuyen",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1479
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 12,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "tot_nghiep",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1591
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 13,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "ho_tro_sinh_vien",
+      "year": 2026,
+      "category": "hoc_vu",
+      "char_count": 1501
+    },
+    {
+      "document_id": "handbook-2026",
+      "source": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "page": 14,
+      "status": "excluded",
+      "reason": "references_page",
+      "detail": "Trang chỉ chứa danh mục tài liệu tham khảo (references only) — loại trừ theo quy tắc.",
+      "char_count": 496
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 1,
+      "status": "excluded",
+      "reason": "cover_page",
+      "detail": "Trang bìa tài liệu (cover page) — loại trừ theo quy tắc đếm trang nội dung.",
+      "char_count": 445
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 2,
+      "status": "excluded",
+      "reason": "toc_page",
+      "detail": "Trang mục lục (table of contents) — loại trừ theo quy tắc đếm trang nội dung.",
+      "char_count": 1282
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 3,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "phan_loai_du_lieu",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1816
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 4,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "pipeline_ingestion",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1739
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 5,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "vector_store_security",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1738
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 6,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "embedding_va_api",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1645
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 7,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "danh_gia_rag_benchmark",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1762
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 8,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "luu_tru_va_xoa_du_lieu",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1649
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 9,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "ung_pho_su_co_ai",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1649
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 10,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "cap_hat_tai_nghiem_thu",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1791
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 11,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "giam_sat_chi_phi_hieu_nang",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1582
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 12,
+      "status": "accepted",
+      "reason": "valid_content_page",
+      "section": "kiem_toan_tuan_thu",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "char_count": 1829
+    },
+    {
+      "document_id": "ai-governance-2026",
+      "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "page": 13,
+      "status": "excluded",
+      "reason": "references_page",
+      "detail": "Trang chỉ chứa danh mục tài liệu tham khảo (references only) — loại trừ theo quy tắc.",
+      "char_count": 535
+    }
+  ],
+  "benchmark_evidence_verification": [
+    {
+      "question_id": "q01",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 3,
+      "evidence_char_len": 254,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q02",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 4,
+      "evidence_char_len": 386,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q03",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 5,
+      "evidence_char_len": 270,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q04",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 6,
+      "evidence_char_len": 356,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q05",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 8,
+      "evidence_char_len": 378,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q06",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 9,
+      "evidence_char_len": 228,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q07",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 11,
+      "evidence_char_len": 375,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q08",
+      "split": "dev",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 13,
+      "evidence_char_len": 167,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q09",
+      "split": "dev",
+      "gold_source_id": "handbook-2026",
+      "gold_page": 5,
+      "evidence_char_len": 184,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q10",
+      "split": "dev",
+      "gold_source_id": "handbook-2026",
+      "gold_page": 7,
+      "evidence_char_len": 362,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q11",
+      "split": "dev",
+      "gold_source_id": "handbook-2026",
+      "gold_page": 8,
+      "evidence_char_len": 93,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q12",
+      "split": "dev",
+      "gold_source_id": "handbook-2026",
+      "gold_page": 11,
+      "evidence_char_len": 395,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q13",
+      "split": "dev",
+      "gold_source_id": "ai-governance-2026",
+      "gold_page": 3,
+      "evidence_char_len": 379,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q14",
+      "split": "dev",
+      "gold_source_id": "ai-governance-2026",
+      "gold_page": 4,
+      "evidence_char_len": 342,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q15",
+      "split": "dev",
+      "gold_source_id": "ai-governance-2026",
+      "gold_page": 8,
+      "evidence_char_len": 391,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q16",
+      "split": "test",
+      "gold_source_id": "handbook-2025",
+      "gold_page": 14,
+      "evidence_char_len": 302,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q17",
+      "split": "test",
+      "gold_source_id": "handbook-2026",
+      "gold_page": 12,
+      "evidence_char_len": 196,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q18",
+      "split": "test",
+      "gold_source_id": "handbook-2026",
+      "gold_page": 10,
+      "evidence_char_len": 279,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q19",
+      "split": "test",
+      "gold_source_id": "ai-governance-2026",
+      "gold_page": 9,
+      "evidence_char_len": 370,
+      "verified_in_normalized_page": true
+    },
+    {
+      "question_id": "q20",
+      "split": "test",
+      "gold_source_id": "ai-governance-2026",
+      "gold_page": 11,
+      "evidence_char_len": 256,
+      "verified_in_normalized_page": true
+    }
+  ]
+}

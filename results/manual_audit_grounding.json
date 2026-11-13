@@ -1,0 +1,113 @@
+{
+  "definition_note": "Grounding Quality tại đây chỉ đánh giá mức độ đầy đủ của bằng chứng truy xuất được trong top-3 (0 = không có bằng chứng; 1 = có bằng chứng một phần nhưng thiếu điều kiện/ngữ cảnh hoặc bị cắt cụt; 2 = đủ bằng chứng, điều kiện và truy được nguồn), tuyệt đối không phải là độ chính xác câu trả lời của LLM.",
+  "annotator_disclosure": "Chấm thủ công bởi tác giả (Phạm Công Dũng - 2A202603428) dựa trên đối chiếu trực tiếp văn bản top-3 với câu hỏi và trang nguồn.",
+  "summary_by_strategy": {
+    "A": {
+      "n_questions": 5,
+      "level_0_count": 0,
+      "level_1_count": 4,
+      "level_2_count": 1,
+      "distribution_0_1_2": "0 / 4 / 1",
+      "mean_score_out_of_2": 1.2
+    },
+    "B": {
+      "n_questions": 5,
+      "level_0_count": 0,
+      "level_1_count": 2,
+      "level_2_count": 3,
+      "distribution_0_1_2": "0 / 2 / 3",
+      "mean_score_out_of_2": 1.6
+    },
+    "C": {
+      "n_questions": 5,
+      "level_0_count": 0,
+      "level_1_count": 1,
+      "level_2_count": 4,
+      "distribution_0_1_2": "0 / 1 / 4",
+      "mean_score_out_of_2": 1.8
+    }
+  },
+  "per_question_labels": {
+    "A": [
+      {
+        "question_id": "q16",
+        "score_0_to_2": 1,
+        "reason": "Top-1 (handbook-2025_p14_fix_02) và Top-2 (handbook-2025_p14_fix_03) cùng thuộc trang 14 và khi ghép lại có thông tin 7 ngày và 50.000đ, nhưng mỗi chunk đơn lẻ bị cắt cụt giữa từ ('Lệ phí phúc khả' / 'ểm thi...') và Top-3 bị lẫn quy định năm 2026 (70.000đ) gây nhiễu điều kiện áp dụng."
+      },
+      {
+        "question_id": "q17",
+        "score_0_to_2": 1,
+        "reason": "Top-1 lấy nhầm quy chế năm 2025 (130 tín chỉ); Top-2 (handbook-2026_p12_fix_03) có thông tin năm 2026 (132 tín chỉ) nhưng bị cắt cụt ở '...tổng số tín chỉ toàn khó', làm mất điều kiện thứ 3 về vi phạm Quy chế AI tạo sinh."
+      },
+      {
+        "question_id": "q18",
+        "score_0_to_2": 1,
+        "reason": "Top-2 (handbook-2026_p10_fix_02) truy xuất đúng Điều 8.2 trang 10 và nêu được tên chứng chỉ 'Năng lực Ứng dụng AI có Trách nhiệm và Quản trị Dữ liệu (mã chứng chỉ AIDL-2026)', nhưng bị cắt đúng chữ 'vớ' ngay trước ngưỡng điểm bắt buộc '75/100 điểm trở lên'."
+      },
+      {
+        "question_id": "q19",
+        "score_0_to_2": 1,
+        "reason": "Top-1 (_fix_03) có thời hạn 'tối đa 15 phút' và '2 giờ', còn Top-2 (_fix_02) có điều kiện kích hoạt sự cố ở trang 9; tuy nhiên do bị chia cắt qua 2 chunk nên không một chunk đơn lẻ nào giữ trọn vẹn cả điều kiện lẫn hành động."
+      },
+      {
+        "question_id": "q20",
+        "score_0_to_2": 2,
+        "reason": "Top-3 (_fix_02) chứa trọn vẹn cam kết P95 latency (150 ms cục bộ, 800 ms API) và Top-1 + Top-2 (_fix_03, _fix_04) cung cấp đủ hạn mức 5,00 USD/tháng kèm ngưỡng cảnh báo 80% (4,00 USD) và khóa 100%, truy vết rõ trang 11."
+      }
+    ],
+    "B": [
+      {
+        "question_id": "q16",
+        "score_0_to_2": 2,
+        "reason": "Top-1 (handbook-2025_p14_para_02) chứa nguyên vẹn Điều 12.2 trang 14 năm 2025: thời hạn 7 ngày liên tục, lệ phí 50.000 đồng/bài thi và điều kiện hoàn phí 100% khi thay đổi từ 0,5 điểm."
+      },
+      {
+        "question_id": "q17",
+        "score_0_to_2": 1,
+        "reason": "Do không lọc metadata, Top-1 và Top-3 bị chiếm bởi văn bản năm 2025 (handbook-2025). Dù Top-2 (handbook-2026_p12_para_03) có đủ 3 trường hợp hạ bậc bằng năm 2026 và nhắc tới 'trên chuẩn 132 tín chỉ' trong ngoặc đơn, nhưng Điều 10.1 quy định chính thức về 132 tín chỉ bị đẩy khỏi top-3 và kết quả bị nhiễu nặng bởi năm 2025 ở Top-1."
+      },
+      {
+        "question_id": "q18",
+        "score_0_to_2": 1,
+        "reason": "Top-1 (handbook-2026_p10_para_01) và Top-3 (handbook-2026_p12_para_01) xác nhận chuẩn IELTS 6.0 và mã 'chứng chỉ AIDL-2026', nhưng thiếu chunk Điều 8.2 (handbook-2026_p10_para_02) nên thiếu tên đầy đủ của chứng chỉ và điều kiện điểm thi thực hành từ 75/100 trở lên."
+      },
+      {
+        "question_id": "q19",
+        "score_0_to_2": 2,
+        "reason": "Top-1 (ai-governance-2026_p09_para_02) chứa trọn vẹn Điều 7.2 trang 9: ngắt kết nối (circuit-breaker) trong tối đa 15 phút và gửi báo cáo sơ bộ cho Ban An toàn Thông tin trong vòng 2 giờ."
+      },
+      {
+        "question_id": "q20",
+        "score_0_to_2": 2,
+        "reason": "Top-1 (ai-governance-2026_p11_para_03) chứa trọn vẹn Điều 9.3 (ngân sách 5,00 USD/tháng, cảnh báo 80% / 4,00 USD, khóa ở 100%) và Top-2 (ai-governance-2026_p11_para_01) chứa trọn vẹn Điều 9.1 (P95 latency 150 ms cục bộ, 800 ms API) tại trang 11."
+      }
+    ],
+    "C": [
+      {
+        "question_id": "q16",
+        "score_0_to_2": 2,
+        "reason": "Nhờ filter year=2025, section='ho_tro_sinh_vien', cả 3 chunk top-3 đều thuộc trang 14 của handbook-2025; Top-1 (handbook-2025_p14_para_02) cung cấp đầy đủ thời hạn 7 ngày, lệ phí 50.000đ và điều kiện hoàn phí mà không bị lẫn dữ liệu năm 2026."
+      },
+      {
+        "question_id": "q17",
+        "score_0_to_2": 2,
+        "reason": "Nhờ filter year=2026, section='tot_nghiep', loại bỏ hoàn toàn nhiễu từ năm 2025: Top-1 (handbook-2026_p12_para_03) cung cấp đủ 3 trường hợp hạ bậc bằng năm 2026 và Top-2 (handbook-2026_p12_para_01) cung cấp đầy đủ quy định chuẩn 132 tín chỉ tại trang 12."
+      },
+      {
+        "question_id": "q18",
+        "score_0_to_2": 1,
+        "reason": "Câu q18 không có filter nên C chạy giống B: Top-1 (Điều 8.1 trang 10) và Top-3 (Điều 10.1 trang 12) nêu được chuẩn IELTS 6.0 và mã 'chứng chỉ AIDL-2026', nhưng thiếu Điều 8.2 nên thiếu ngưỡng điểm đạt 75/100."
+      },
+      {
+        "question_id": "q19",
+        "score_0_to_2": 2,
+        "reason": "Top-1 (ai-governance-2026_p09_para_02) chứa đầy đủ bằng chứng Điều 7.2 trang 9 (ngắt kết nối tối đa 15 phút, báo cáo sơ bộ trong 2 giờ) kèm metadata nguồn chính xác."
+      },
+      {
+        "question_id": "q20",
+        "score_0_to_2": 2,
+        "reason": "Top-1 (Điều 9.3 trang 11) và Top-2 (Điều 9.1 trang 11) của ai-governance-2026 cung cấp đầy đủ cả 2 vế câu hỏi (P95 latency 150ms/800ms và ngân sách API 5,00 USD/tháng)."
+      }
+    ]
+  }
+}

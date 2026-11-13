@@ -1,0 +1,812 @@
+{
+  "corpus_name": "Bộ Quy chế Học vụ Đại học & Quản trị Dữ liệu AI Nội bộ (2025–2026)",
+  "domain_topic": "Chính sách học vụ đại học tín chỉ và quy định kỹ thuật quản trị dữ liệu / hạ tầng vector AI",
+  "license_summary": "CC0-1.0 Public Domain Dedication — Tài liệu mở phục vụ thực hành Data Ingestion Engineering, được phép tái phân phối và lưu trữ trên repo, không chứa thông tin cá nhân (PII) hoặc dữ liệu mật.",
+  "created_at": "2026-11-13T16:50:00+07:00",
+  "page_counting_rule": "Đếm trang PDF vật lý thực sự chứa nội dung quy chế/kỹ thuật chuyên môn (page_type='content'). Loại trừ hoàn toàn: (1) trang bìa (cover), (2) trang mục lục (toc), (3) trang trống/lỗi không có chữ (empty, <50 ký tự), và (4) trang chỉ chứa tài liệu tham khảo (references). Tổng cộng 43 trang vật lý trên 3 file PDF, sau khi loại trừ 10 trang không hợp lệ còn lại đúng 33 trang nội dung hữu ích (đạt yêu cầu >= 30 trang nội dung).",
+  "total_documents": 3,
+  "total_physical_pages": 43,
+  "total_valid_content_pages": 33,
+  "total_excluded_pages": 10,
+  "total_valid_normalized_chars": 51509,
+  "metadata_schema": {
+    "required_fields": [
+      "document_id",
+      "source",
+      "page"
+    ],
+    "filter_fields": {
+      "year": {
+        "type": "integer",
+        "allowed_values": [
+          2025,
+          2026
+        ],
+        "source_of_value": "Trích xuất trực tiếp từ dòng tiêu đề chuẩn [Năm ban hành: YYYY] trên từng trang PDF và đối chiếu với manifest",
+        "rationale": "Giúp phân biệt chính xác quy chế năm 2025 và bản cập nhật năm 2026 khi hai văn bản có cùng cấu trúc chương/điều khoản nhưng khác con số quy định."
+      },
+      "section": {
+        "type": "string",
+        "allowed_values": [
+          "tuyen_sinh",
+          "dang_ky_tin_chi",
+          "hoc_phi_hoc_bong",
+          "danh_gia_diem",
+          "canh_bao_hoc_vu",
+          "nghi_hoc_tam_thoi",
+          "thuc_tap_do_an",
+          "ngoai_ngu_dau_ra",
+          "ky_luat_thi_cu",
+          "tot_nghiep",
+          "chuyen_nganh_song_bang",
+          "ho_tro_sinh_vien",
+          "su_dung_ai_hoc_tap",
+          "hoc_truc_tuyen",
+          "phan_loai_du_lieu",
+          "pipeline_ingestion",
+          "vector_store_security",
+          "embedding_va_api",
+          "danh_gia_rag_benchmark",
+          "luu_tru_va_xoa_du_lieu",
+          "ung_pho_su_co_ai",
+          "cap_hat_tai_nghiem_thu",
+          "giam_sat_chi_phi_hieu_nang",
+          "kiem_toan_tuan_thu"
+        ],
+        "source_of_value": "Trích xuất trực tiếp từ trường [Chuyên mục: <section>] in trên từng trang nội dung của PDF",
+        "rationale": "Giúp thu hẹp phạm vi tìm kiếm vào đúng chuyên mục nghiệp vụ (tuyển sinh, học phí, bảo mật vector...) khi người dùng tra cứu theo chủ đề."
+      },
+      "category": {
+        "type": "string",
+        "allowed_values": [
+          "hoc_vu",
+          "quan_tri_du_lieu_ai"
+        ],
+        "source_of_value": "Trích xuất trực tiếp từ trường [Danh mục: <category>] trên từng trang PDF",
+        "rationale": "Phân tách rõ mảng quy chế học vụ dành cho sinh viên (hoc_vu) và mảng tiêu chuẩn kỹ thuật quản trị dữ liệu AI (quan_tri_du_lieu_ai)."
+      },
+      "audience": {
+        "type": "string",
+        "allowed_values": [
+          "sinh_vien",
+          "ky_su_va_nghien_cuu"
+        ],
+        "source_of_value": "Trích xuất trực tiếp từ trường [Đối tượng: <audience>] trên từng trang PDF",
+        "rationale": "Hỗ trợ lọc theo nhóm đối tượng áp dụng văn bản."
+      },
+      "version": {
+        "type": "string",
+        "allowed_values": [
+          "2025.1",
+          "2026.1",
+          "2026.2"
+        ],
+        "source_of_value": "Trích xuất trực tiếp từ trường [Phiên bản: <version>] trên từng trang PDF",
+        "rationale": "Truy vết chính xác phiên bản phát hành của tài liệu."
+      }
+    }
+  },
+  "documents": [
+    {
+      "source_id": "handbook-2025",
+      "document_id": "handbook-2025",
+      "title": "Sổ tay Quy chế Học vụ, Tuyển sinh và Đào tạo Tín chỉ Đại học Công nghệ Số — Năm 2025",
+      "source_path_or_url": "data/pdfs/doc_01_academic_handbook_2025.pdf",
+      "starter_path": "starter/data/doc_01_academic_handbook_2025.pdf",
+      "license_or_permission": "CC0-1.0 Public Domain Dedication (Tài liệu quy chế mẫu phục vụ nghiên cứu và thực hành kỹ thuật Data Ingestion; không chứa PII hay dữ liệu mật)",
+      "accessed_at": "2026-11-13T16:50:00+07:00",
+      "snapshot_version": "2025.1",
+      "year": 2025,
+      "category": "hoc_vu",
+      "audience": "sinh_vien",
+      "file_sha256": "623bd8fc1e2e2d8fe99910786d7b9b56a8e208fb5252057df3e7cd8d8bb20c80",
+      "physical_page_count": 16,
+      "valid_content_page_count": 12,
+      "valid_page_numbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "excluded_pages": [
+        {
+          "page": 1,
+          "page_type": "cover",
+          "reason": "Trang bìa tài liệu (cover page) — không tính vào trang nội dung hữu ích",
+          "char_count": 409
+        },
+        {
+          "page": 2,
+          "page_type": "toc",
+          "reason": "Trang mục lục (table of contents) — chỉ chứa danh sách đề mục và số trang",
+          "char_count": 1579
+        },
+        {
+          "page": 15,
+          "page_type": "empty",
+          "reason": "Trang trống không có ký tự văn bản (0 ký tự) — mô phỏng trang scan lỗi/trống",
+          "char_count": 0
+        },
+        {
+          "page": 16,
+          "page_type": "references",
+          "reason": "Trang chỉ chứa danh mục tài liệu tham khảo cuối văn bản (references only)",
+          "char_count": 544
+        }
+      ],
+      "total_valid_normalized_chars": 17814,
+      "pages": [
+        {
+          "page_id": "handbook-2025_p01",
+          "page": 1,
+          "page_type": "cover",
+          "is_valid_content": false,
+          "section": "trang_bia",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "TRANG BÌA TÀI LIỆU",
+          "char_count": 409
+        },
+        {
+          "page_id": "handbook-2025_p02",
+          "page": 2,
+          "page_type": "toc",
+          "is_valid_content": false,
+          "section": "muc_luc",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "MỤC LỤC TÀI LIỆU (TABLE OF CONTENTS)",
+          "char_count": 1579
+        },
+        {
+          "page_id": "handbook-2025_p03",
+          "page": 3,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "tuyen_sinh",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 1. Quy định Tuyển sinh và Nhập học Đại học Chính quy Năm 2025",
+          "char_count": 1667
+        },
+        {
+          "page_id": "handbook-2025_p04",
+          "page": 4,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "dang_ky_tin_chi",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 2. Quy định Đăng ký Học phần và Rút Học phần Năm 2025",
+          "char_count": 1570
+        },
+        {
+          "page_id": "handbook-2025_p05",
+          "page": 5,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "hoc_phi_hoc_bong",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 3. Chính sách Học phí, Miễn giảm và Học bổng KKHT Năm 2025",
+          "char_count": 1544
+        },
+        {
+          "page_id": "handbook-2025_p06",
+          "page": 6,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "danh_gia_diem",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 4. Đánh giá Học phần, Thang điểm và Học Cải thiện Điểm Năm 2025",
+          "char_count": 1410
+        },
+        {
+          "page_id": "handbook-2025_p07",
+          "page": 7,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "canh_bao_hoc_vu",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 5. Quy định Cảnh báo Học vụ và Buộc Thôi học Năm 2025",
+          "char_count": 1434
+        },
+        {
+          "page_id": "handbook-2025_p08",
+          "page": 8,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "nghi_hoc_tam_thoi",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 6. Thủ tục Nghỉ học Tạm thời và Bảo lưu Học tập Năm 2025",
+          "char_count": 1492
+        },
+        {
+          "page_id": "handbook-2025_p09",
+          "page": 9,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "thuc_tap_do_an",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 7. Quy định Thực tập Doanh nghiệp và Đồ án Tốt nghiệp Năm 2025",
+          "char_count": 1251
+        },
+        {
+          "page_id": "handbook-2025_p10",
+          "page": 10,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "ngoai_ngu_dau_ra",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 8. Chuẩn Đầu ra Ngoại ngữ và Kỹ năng Công nghệ Thông tin Năm 2025",
+          "char_count": 1531
+        },
+        {
+          "page_id": "handbook-2025_p11",
+          "page": 11,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "ky_luat_thi_cu",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 9. Quy chế Phòng thi và Liêm chính Học thuật Năm 2025",
+          "char_count": 1484
+        },
+        {
+          "page_id": "handbook-2025_p12",
+          "page": 12,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "tot_nghiep",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 10. Điều kiện Công nhận Tốt nghiệp và Xếp loại Bằng Năm 2025",
+          "char_count": 1398
+        },
+        {
+          "page_id": "handbook-2025_p13",
+          "page": 13,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "chuyen_nganh_song_bang",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 11. Quy định Học Cùng lúc Hai Chương trình (Song bằng) Năm 2025",
+          "char_count": 1414
+        },
+        {
+          "page_id": "handbook-2025_p14",
+          "page": 14,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "ho_tro_sinh_vien",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 12. Cố vấn Học tập, Phúc khảo Bài thi và Giải quyết Khiếu nại Năm 2025",
+          "char_count": 1619
+        },
+        {
+          "page_id": "handbook-2025_p15",
+          "page": 15,
+          "page_type": "empty",
+          "is_valid_content": false,
+          "section": "trang_trong",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "",
+          "char_count": 0
+        },
+        {
+          "page_id": "handbook-2025_p16",
+          "page": 16,
+          "page_type": "references",
+          "is_valid_content": false,
+          "section": "tai_lieu_tham_khao",
+          "year": 2025,
+          "version": "2025.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "TÀI LIỆU THAM KHẢO VÀ VĂN BẢN PHÁP QUY VIỆN DẪN",
+          "char_count": 544
+        }
+      ]
+    },
+    {
+      "source_id": "handbook-2026",
+      "document_id": "handbook-2026",
+      "title": "Sổ tay Quy chế Học vụ, Tuyển sinh và Đào tạo Tín chỉ Đại học Công nghệ Số — Bản Cập nhật Năm 2026",
+      "source_path_or_url": "data/pdfs/doc_02_academic_handbook_2026.pdf",
+      "starter_path": "starter/data/doc_02_academic_handbook_2026.pdf",
+      "license_or_permission": "CC0-1.0 Public Domain Dedication (Tài liệu quy chế mẫu phục vụ nghiên cứu và thực hành kỹ thuật Data Ingestion; không chứa PII hay dữ liệu mật)",
+      "accessed_at": "2026-11-13T16:50:00+07:00",
+      "snapshot_version": "2026.1",
+      "year": 2026,
+      "category": "hoc_vu",
+      "audience": "sinh_vien",
+      "file_sha256": "0b01502df92652443c368d0152e79737a3b863eb415a36fb0fb924ab793dd698",
+      "physical_page_count": 14,
+      "valid_content_page_count": 11,
+      "valid_page_numbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "excluded_pages": [
+        {
+          "page": 1,
+          "page_type": "cover",
+          "reason": "Trang bìa tài liệu (cover page) — không tính vào trang nội dung hữu ích",
+          "char_count": 409
+        },
+        {
+          "page": 2,
+          "page_type": "toc",
+          "reason": "Trang mục lục (table of contents) — chỉ chứa danh sách đề mục và số trang",
+          "char_count": 1371
+        },
+        {
+          "page": 14,
+          "page_type": "references",
+          "reason": "Trang chỉ chứa danh mục tài liệu tham khảo cuối văn bản (references only)",
+          "char_count": 496
+        }
+      ],
+      "total_valid_normalized_chars": 16495,
+      "pages": [
+        {
+          "page_id": "handbook-2026_p01",
+          "page": 1,
+          "page_type": "cover",
+          "is_valid_content": false,
+          "section": "trang_bia",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "TRANG BÌA TÀI LIỆU",
+          "char_count": 409
+        },
+        {
+          "page_id": "handbook-2026_p02",
+          "page": 2,
+          "page_type": "toc",
+          "is_valid_content": false,
+          "section": "muc_luc",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "MỤC LỤC TÀI LIỆU (TABLE OF CONTENTS)",
+          "char_count": 1371
+        },
+        {
+          "page_id": "handbook-2026_p03",
+          "page": 3,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "tuyen_sinh",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 1. Quy định Tuyển sinh và Nhập học Đại học Chính quy Cập nhật Năm 2026",
+          "char_count": 1578
+        },
+        {
+          "page_id": "handbook-2026_p04",
+          "page": 4,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "dang_ky_tin_chi",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 2. Quy định Đăng ký Học phần và Rút Học phần Cập nhật Năm 2026",
+          "char_count": 1384
+        },
+        {
+          "page_id": "handbook-2026_p05",
+          "page": 5,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "hoc_phi_hoc_bong",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 3. Chính sách Học phí và Học bổng KKHT Cập nhật Năm 2026",
+          "char_count": 1605
+        },
+        {
+          "page_id": "handbook-2026_p06",
+          "page": 6,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "danh_gia_diem",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 4. Đánh giá Học phần, Bảo vệ Vấn đáp và Học Cải thiện Năm 2026",
+          "char_count": 1396
+        },
+        {
+          "page_id": "handbook-2026_p07",
+          "page": 7,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "canh_bao_hoc_vu",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 5. Cảnh báo Học vụ và Cơ chế Cứu xét Có Cam kết Năm 2026",
+          "char_count": 1480
+        },
+        {
+          "page_id": "handbook-2026_p08",
+          "page": 8,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "su_dung_ai_hoc_tap",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 6. Quy chế Sử dụng Trí tuệ Nhân tạo Tạo sinh (Generative AI) Năm 2026",
+          "char_count": 1744
+        },
+        {
+          "page_id": "handbook-2026_p09",
+          "page": 9,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "thuc_tap_do_an",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 7. Thực tập Doanh nghiệp, Khóa luận và Đồ án Khởi nghiệp Năm 2026",
+          "char_count": 1359
+        },
+        {
+          "page_id": "handbook-2026_p10",
+          "page": 10,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "ngoai_ngu_dau_ra",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 8. Chuẩn Đầu ra Ngoại ngữ và Năng lực AI & Dữ liệu Năm 2026",
+          "char_count": 1378
+        },
+        {
+          "page_id": "handbook-2026_p11",
+          "page": 11,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "hoc_truc_tuyen",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 9. Quy chế Học tập Kết hợp (Blended Learning) và Tín chỉ MOOC Năm 2026",
+          "char_count": 1479
+        },
+        {
+          "page_id": "handbook-2026_p12",
+          "page": 12,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "tot_nghiep",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 10. Điều kiện Xét Tốt nghiệp Sớm và Hạ bậc Bằng Cập nhật Năm 2026",
+          "char_count": 1591
+        },
+        {
+          "page_id": "handbook-2026_p13",
+          "page": 13,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "ho_tro_sinh_vien",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "Chương 11. Cổng Dịch vụ Sinh viên Một cửa và Phúc khảo Điểm thi Năm 2026",
+          "char_count": 1501
+        },
+        {
+          "page_id": "handbook-2026_p14",
+          "page": 14,
+          "page_type": "references",
+          "is_valid_content": false,
+          "section": "tai_lieu_tham_khao",
+          "year": 2026,
+          "version": "2026.1",
+          "category": "hoc_vu",
+          "audience": "sinh_vien",
+          "heading": "TÀI LIỆU THAM KHẢO VÀ VĂN BẢN PHÁP QUY CẬP NHẬT NĂM 2026",
+          "char_count": 496
+        }
+      ]
+    },
+    {
+      "source_id": "ai-governance-2026",
+      "document_id": "ai-governance-2026",
+      "title": "Quy định Kỹ thuật về Quản trị Dữ liệu, Hạ tầng Vector và Vận hành Hệ thống AI Nội bộ — Năm 2026",
+      "source_path_or_url": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+      "starter_path": "starter/data/doc_03_ai_data_governance_2026.pdf",
+      "license_or_permission": "CC0-1.0 Public Domain Dedication (Tài liệu tiêu chuẩn kỹ thuật mở phục vụ thực hành Data Ingestion; không chứa PII hay dữ liệu mật)",
+      "accessed_at": "2026-11-13T16:50:00+07:00",
+      "snapshot_version": "2026.2",
+      "year": 2026,
+      "category": "quan_tri_du_lieu_ai",
+      "audience": "ky_su_va_nghien_cuu",
+      "file_sha256": "4b82707406b467d7f474bbb7a7c2490f2f6de5042cea7f7e283b82d6216d072a",
+      "physical_page_count": 13,
+      "valid_content_page_count": 10,
+      "valid_page_numbers": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "excluded_pages": [
+        {
+          "page": 1,
+          "page_type": "cover",
+          "reason": "Trang bìa tài liệu (cover page) — không tính vào trang nội dung hữu ích",
+          "char_count": 446
+        },
+        {
+          "page": 2,
+          "page_type": "toc",
+          "reason": "Trang mục lục (table of contents) — chỉ chứa danh sách đề mục và số trang",
+          "char_count": 1282
+        },
+        {
+          "page": 13,
+          "page_type": "references",
+          "reason": "Trang chỉ chứa danh mục tài liệu tham khảo cuối văn bản (references only)",
+          "char_count": 535
+        }
+      ],
+      "total_valid_normalized_chars": 17200,
+      "pages": [
+        {
+          "page_id": "ai-governance-2026_p01",
+          "page": 1,
+          "page_type": "cover",
+          "is_valid_content": false,
+          "section": "trang_bia",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "TRANG BÌA TÀI LIỆU KỸ THUẬT",
+          "char_count": 446
+        },
+        {
+          "page_id": "ai-governance-2026_p02",
+          "page": 2,
+          "page_type": "toc",
+          "is_valid_content": false,
+          "section": "muc_luc",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "MỤC LỤC TÀI LIỆU KỸ THUẬT (TABLE OF CONTENTS)",
+          "char_count": 1282
+        },
+        {
+          "page_id": "ai-governance-2026_p03",
+          "page": 3,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "phan_loai_du_lieu",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 1. Phân loại Dữ liệu 4 Cấp độ Bảo mật và Quy tắc Ẩn danh hóa PII",
+          "char_count": 1816
+        },
+        {
+          "page_id": "ai-governance-2026_p04",
+          "page": 4,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "pipeline_ingestion",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 2. Tiêu chuẩn Kỹ thuật cho Pipeline Nạp Dữ liệu (Data Ingestion)",
+          "char_count": 1739
+        },
+        {
+          "page_id": "ai-governance-2026_p05",
+          "page": 5,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "vector_store_security",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 3. Quy định Bảo mật và Vận hành Cơ sở Dữ liệu Vector (pgvector & Qdrant)",
+          "char_count": 1738
+        },
+        {
+          "page_id": "ai-governance-2026_p06",
+          "page": 6,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "embedding_va_api",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 4. Chính sách Lựa chọn Mô hình Embedding và Kiểm soát Kết nối API",
+          "char_count": 1645
+        },
+        {
+          "page_id": "ai-governance-2026_p07",
+          "page": 7,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "danh_gia_rag_benchmark",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 5. Quy chuẩn Kiểm thử Truy xuất (Retrieval Benchmark) và Ngưỡng Nghiệm thu",
+          "char_count": 1762
+        },
+        {
+          "page_id": "ai-governance-2026_p08",
+          "page": 8,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "luu_tru_va_xoa_du_lieu",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 6. Vòng đời Lưu trữ Query Trace, Nạp lại Chống trùng và Xóa Dữ liệu",
+          "char_count": 1649
+        },
+        {
+          "page_id": "ai-governance-2026_p09",
+          "page": 9,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "ung_pho_su_co_ai",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 7. Quy trình Ứng phó Sự cố Rò rỉ Dữ liệu và Tấn công Prompt Injection",
+          "char_count": 1649
+        },
+        {
+          "page_id": "ai-governance-2026_p10",
+          "page": 10,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "cap_hat_tai_nghiem_thu",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 8. Kiểm thử Hồi quy (Regression Testing) và Quản lý Phiên bản Index",
+          "char_count": 1791
+        },
+        {
+          "page_id": "ai-governance-2026_p11",
+          "page": 11,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "giam_sat_chi_phi_hieu_nang",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 9. Giám sát Độ trễ Truy vấn (Latency SLA) và Hạn mức Chi phí Vector hóa",
+          "char_count": 1582
+        },
+        {
+          "page_id": "ai-governance-2026_p12",
+          "page": 12,
+          "page_type": "content",
+          "is_valid_content": true,
+          "section": "kiem_toan_tuan_thu",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "Phần 10. Kiểm toán Định kỳ Hệ thống Tri thức AI và Chế tài Xử lý Vi phạm",
+          "char_count": 1829
+        },
+        {
+          "page_id": "ai-governance-2026_p13",
+          "page": 13,
+          "page_type": "references",
+          "is_valid_content": false,
+          "section": "tai_lieu_tham_khao",
+          "year": 2026,
+          "version": "2026.2",
+          "category": "quan_tri_du_lieu_ai",
+          "audience": "ky_su_va_nghien_cuu",
+          "heading": "DANH MỤC TIÊU CHUẨN KỸ THUẬT VÀ TÀI LIỆU THAM CHIẾU",
+          "char_count": 535
+        }
+      ]
+    }
+  ]
+}

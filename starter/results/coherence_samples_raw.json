@@ -1,0 +1,382 @@
+[
+  {
+    "position_id": "pos_01",
+    "page_id": "ai-governance-2026_p03",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 3,
+    "section": "phan_loai_du_lieu",
+    "anchor_clause": "Điều 1.2. Lệnh cấm tuyệt đối nạp dữ liệu cấp độ L4 và điều kiện nạp dữ liệu L3 vào Vector Store: Tuyệt đối cấm đưa bất kỳ tài liệu nào thuộc Cấp độ L4 vào kho tri thức vector hoặc gửi qua API của mô hình ngôn ngữ bên thứ ba dưới mọi hình thức. Đối với dữ liệu Cấp độ L3, kỹ sư dữ liệu chỉ được phép nạp vào cơ sở dữ liệu vector chạy nội bộ (on-premise) sau khi đã thực hiện bước che giấu hoặc băm một chiều (salted SHA-256) toàn bộ các trường thông tin định danh cá nhân (PII) gồm: họ tên đầy đủ, mã số định danh công dân, số điện thoại, địa chỉ nhà riêng và email cá nhân.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p03_fix_02",
+          "char_len": 500,
+          "text": ": Cấp độ L1 - Công khai (Public: sổ tay công khai, văn bản đã xuất bản mở); Cấp độ L2 - Nội bộ (Internal: quy trình kỹ thuật nội bộ không chứa dữ liệu cá nhân); Cấp độ L3 - Hạn chế (Restricted: dữ liệu học vụ gắn định danh, hợp đồng nghiên cứu); và Cấp độ L4 - Tuyệt mật (Strictly Confidential: khóa bí mật, mật khẩu hệ thống, hồ sơ y tế và dữ liệu sinh trắc học).\n\nĐiều 1.2. Lệnh cấm tuyệt đối nạp dữ liệu cấp độ L4 và điều kiện nạp dữ liệu L3 vào Vector Store: Tuyệt đối cấm đưa bất kỳ tài liệu nào"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p03_fix_03",
+          "char_len": 500,
+          "text": "ector Store: Tuyệt đối cấm đưa bất kỳ tài liệu nào thuộc Cấp độ L4 vào kho tri thức vector hoặc gửi qua API của mô hình ngôn ngữ bên thứ ba dưới mọi hình thức. Đối với dữ liệu Cấp độ L3, kỹ sư dữ liệu chỉ được phép nạp vào cơ sở dữ liệu vector chạy nội bộ (on-premise) sau khi đã thực hiện bước che giấu hoặc băm một chiều (salted SHA-256) toàn bộ các trường thông tin định danh cá nhân (PII) gồm: họ tên đầy đủ, mã số định danh công dân, số điện thoại, địa chỉ nhà riêng và email cá nhân.\n\nĐiều 1.3."
+        },
+        {
+          "chunk_id": "ai-governance-2026_p03_fix_04",
+          "char_len": 466,
+          "text": "ại, địa chỉ nhà riêng và email cá nhân.\n\nĐiều 1.3. Quy định về Manifest nguồn dữ liệu bắt buộc: Mỗi tập dữ liệu (corpus) đưa vào hệ thống RAG phải đi kèm một tệp manifest định dạng JSON hoặc CSV ghi rõ tối thiểu 7 trường thông tin: mã định danh nguồn (source_id), tiêu đề tài liệu (title), đường dẫn hoặc URL gốc (source_path_or_url), giấy phép sử dụng (license_or_permission), thời điểm truy cập (accessed_at), danh sách trang hợp lệ và tổng số ký tự sau chuẩn hóa."
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p03_para_02",
+          "char_len": 643,
+          "text": "Phần 1. Phân loại Dữ liệu 4 Cấp độ Bảo mật và Quy tắc Ẩn danh hóa PII\nĐiều 1.2. Lệnh cấm tuyệt đối nạp dữ liệu cấp độ L4 và điều kiện nạp dữ liệu L3 vào Vector Store: Tuyệt đối cấm đưa bất kỳ tài liệu nào thuộc Cấp độ L4 vào kho tri thức vector hoặc gửi qua API của mô hình ngôn ngữ bên thứ ba dưới mọi hình thức. Đối với dữ liệu Cấp độ L3, kỹ sư dữ liệu chỉ được phép nạp vào cơ sở dữ liệu vector chạy nội bộ (on-premise) sau khi đã thực hiện bước che giấu hoặc băm một chiều (salted SHA-256) toàn bộ các trường thông tin định danh cá nhân (PII) gồm: họ tên đầy đủ, mã số định danh công dân, số điện thoại, địa chỉ nhà riêng và email cá nhân."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p03_para_02",
+          "char_len": 643,
+          "text": "Phần 1. Phân loại Dữ liệu 4 Cấp độ Bảo mật và Quy tắc Ẩn danh hóa PII\nĐiều 1.2. Lệnh cấm tuyệt đối nạp dữ liệu cấp độ L4 và điều kiện nạp dữ liệu L3 vào Vector Store: Tuyệt đối cấm đưa bất kỳ tài liệu nào thuộc Cấp độ L4 vào kho tri thức vector hoặc gửi qua API của mô hình ngôn ngữ bên thứ ba dưới mọi hình thức. Đối với dữ liệu Cấp độ L3, kỹ sư dữ liệu chỉ được phép nạp vào cơ sở dữ liệu vector chạy nội bộ (on-premise) sau khi đã thực hiện bước che giấu hoặc băm một chiều (salted SHA-256) toàn bộ các trường thông tin định danh cá nhân (PII) gồm: họ tên đầy đủ, mã số định danh công dân, số điện thoại, địa chỉ nhà riêng và email cá nhân."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_02",
+    "page_id": "ai-governance-2026_p04",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 4,
+    "section": "pipeline_ingestion",
+    "anchor_clause": "Điều 2.2. Quy tắc lọc bỏ trang không mang nội dung tri thức khi tính kích thước Corpus: Khi kiểm đếm số trang nội dung hữu ích của tệp PDF, pipeline phải tự động phát hiện và loại trừ 4 loại trang không hợp lệ: (1) trang bìa (cover page); (2) trang mục lục (table of contents); (3) trang trống hoặc trang quét ảnh lỗi có độ dài văn bản sau chuẩn hóa dưới 50 ký tự; và (4) trang chỉ chứa danh mục tài liệu tham khảo ở cuối văn bản. Mọi trang bị loại trừ hoặc rỗng bắt buộc phải được ghi vào nhật ký lỗi (ingestion log) kèm số trang vật lý và lý do loại trừ.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p04_fix_02",
+          "char_len": 499,
+          "text": "malization Form Canonical Composition), loại bỏ các ký tự điều khiển ẩn (zero-width space U+200B, byte-order mark U+FEFF), thay thế khoảng trắng không ngắt dòng (U+00A0) bằng khoảng trắng chuẩn và gộp các dòng trống liên tiếp (từ 3 dòng xuống dòng trở lên) về đúng 2 ký tự xuống dòng (\\n\\n) nhằm giữ nguyên ranh giới đoạn văn cho bộ chia chunk.\n\nĐiều 2.2. Quy tắc lọc bỏ trang không mang nội dung tri thức khi tính kích thước Corpus: Khi kiểm đếm số trang nội dung hữu ích của tệp PDF, pipeline phải"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p04_fix_03",
+          "char_len": 499,
+          "text": "trang nội dung hữu ích của tệp PDF, pipeline phải tự động phát hiện và loại trừ 4 loại trang không hợp lệ: (1) trang bìa (cover page); (2) trang mục lục (table of contents); (3) trang trống hoặc trang quét ảnh lỗi có độ dài văn bản sau chuẩn hóa dưới 50 ký tự; và (4) trang chỉ chứa danh mục tài liệu tham khảo ở cuối văn bản. Mọi trang bị loại trừ hoặc rỗng bắt buộc phải được ghi vào nhật ký lỗi (ingestion log) kèm số trang vật lý và lý do loại trừ.\n\nĐiều 2.3. Ngưỡng kích thước tối thiểu đối với"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p04_para_02",
+          "char_len": 626,
+          "text": "Phần 2. Tiêu chuẩn Kỹ thuật cho Pipeline Nạp Dữ liệu (Data Ingestion)\nĐiều 2.2. Quy tắc lọc bỏ trang không mang nội dung tri thức khi tính kích thước Corpus: Khi kiểm đếm số trang nội dung hữu ích của tệp PDF, pipeline phải tự động phát hiện và loại trừ 4 loại trang không hợp lệ: (1) trang bìa (cover page); (2) trang mục lục (table of contents); (3) trang trống hoặc trang quét ảnh lỗi có độ dài văn bản sau chuẩn hóa dưới 50 ký tự; và (4) trang chỉ chứa danh mục tài liệu tham khảo ở cuối văn bản. Mọi trang bị loại trừ hoặc rỗng bắt buộc phải được ghi vào nhật ký lỗi (ingestion log) kèm số trang vật lý và lý do loại trừ."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p04_para_02",
+          "char_len": 626,
+          "text": "Phần 2. Tiêu chuẩn Kỹ thuật cho Pipeline Nạp Dữ liệu (Data Ingestion)\nĐiều 2.2. Quy tắc lọc bỏ trang không mang nội dung tri thức khi tính kích thước Corpus: Khi kiểm đếm số trang nội dung hữu ích của tệp PDF, pipeline phải tự động phát hiện và loại trừ 4 loại trang không hợp lệ: (1) trang bìa (cover page); (2) trang mục lục (table of contents); (3) trang trống hoặc trang quét ảnh lỗi có độ dài văn bản sau chuẩn hóa dưới 50 ký tự; và (4) trang chỉ chứa danh mục tài liệu tham khảo ở cuối văn bản. Mọi trang bị loại trừ hoặc rỗng bắt buộc phải được ghi vào nhật ký lỗi (ingestion log) kèm số trang vật lý và lý do loại trừ."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_03",
+    "page_id": "ai-governance-2026_p05",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 5,
+    "section": "vector_store_security",
+    "anchor_clause": "Điều 3.2. Chuẩn độ đo khoảng cách Cosine và kiểm tra số chiều vector: Toàn bộ các bảng (table) hoặc bộ sưu tập (collection) so sánh chiến lược dữ liệu trong cùng một đợt đánh giá bắt buộc phải thống nhất sử dụng độ đo khoảng cách Cosine (Cosine Distance / Cosine Similarity). Tầng lưu trữ phải kiểm tra nghiêm ngặt số chiều (dimensions) của mọi vector đầu vào khớp chính xác với số chiều đã khai báo của mô hình Embedding trước khi thực hiện câu lệnh ghi hoặc truy vấn.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p05_fix_02",
+          "char_len": 499,
+          "text": "or từ phiên bản 0.7 trở lên, hoặc Qdrant/Chroma ở chế độ lưu trữ bền vững trên đĩa) bắt buộc phải lưu dữ liệu vào ổ cứng hoặc Docker Volume định danh. Nghiêm cấm sử dụng chế độ chỉ lưu tạm trong bộ nhớ RAM (in-memory only) hoặc tự tính tích vô hướng trên mảng Python thuần thay cho hệ quản trị cơ sở dữ liệu vector.\n\nĐiều 3.2. Chuẩn độ đo khoảng cách Cosine và kiểm tra số chiều vector: Toàn bộ các bảng (table) hoặc bộ sưu tập (collection) so sánh chiến lược dữ liệu trong cùng một đợt đánh giá bắt"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p05_fix_03",
+          "char_len": 500,
+          "text": "hiến lược dữ liệu trong cùng một đợt đánh giá bắt buộc phải thống nhất sử dụng độ đo khoảng cách Cosine (Cosine Distance / Cosine Similarity). Tầng lưu trữ phải kiểm tra nghiêm ngặt số chiều (dimensions) của mọi vector đầu vào khớp chính xác với số chiều đã khai báo của mô hình Embedding trước khi thực hiện câu lệnh ghi hoặc truy vấn.\n\nĐiều 3.3. Phòng chống tấn công SQL Injection và lọc Metadata an toàn: Khi thực hiện truy vấn kết hợp lọc theo trường metadata (như year, section, category, audien"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p05_para_02",
+          "char_len": 547,
+          "text": "Phần 3. Quy định Bảo mật và Vận hành Cơ sở Dữ liệu Vector (pgvector & Qdrant)\nĐiều 3.2. Chuẩn độ đo khoảng cách Cosine và kiểm tra số chiều vector: Toàn bộ các bảng (table) hoặc bộ sưu tập (collection) so sánh chiến lược dữ liệu trong cùng một đợt đánh giá bắt buộc phải thống nhất sử dụng độ đo khoảng cách Cosine (Cosine Distance / Cosine Similarity). Tầng lưu trữ phải kiểm tra nghiêm ngặt số chiều (dimensions) của mọi vector đầu vào khớp chính xác với số chiều đã khai báo của mô hình Embedding trước khi thực hiện câu lệnh ghi hoặc truy vấn."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p05_para_02",
+          "char_len": 547,
+          "text": "Phần 3. Quy định Bảo mật và Vận hành Cơ sở Dữ liệu Vector (pgvector & Qdrant)\nĐiều 3.2. Chuẩn độ đo khoảng cách Cosine và kiểm tra số chiều vector: Toàn bộ các bảng (table) hoặc bộ sưu tập (collection) so sánh chiến lược dữ liệu trong cùng một đợt đánh giá bắt buộc phải thống nhất sử dụng độ đo khoảng cách Cosine (Cosine Distance / Cosine Similarity). Tầng lưu trữ phải kiểm tra nghiêm ngặt số chiều (dimensions) của mọi vector đầu vào khớp chính xác với số chiều đã khai báo của mô hình Embedding trước khi thực hiện câu lệnh ghi hoặc truy vấn."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_04",
+    "page_id": "ai-governance-2026_p06",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 6,
+    "section": "embedding_va_api",
+    "anchor_clause": "Điều 4.2. Quy tắc cấm âm thầm chuyển đổi dự phòng (No Silent Fallback) khi lỗi kết nối: Khi dịch vụ API hoặc mô hình Embedding cục bộ gặp lỗi xác thực, hết hạn mức (quota exceeded), mất kết nối mạng hoặc thiếu thư viện, hệ thống bắt buộc phải dừng thực thi và thông báo lỗi tường minh (fail-fast with explicit exception). Tuyệt đối không được âm thầm bắt ngoại lệ rồi trả về vector toàn số 0 hoặc vector ngẫu nhiên làm sai lệch kết quả đánh giá benchmark.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p06_fix_02",
+          "char_len": 499,
+          "text": "ính thức của OpenAI, Google Gemini, OpenRouter hoặc mô hình chạy cục bộ như Sentence Transformers, Model2Vec). Nghiêm cấm việc tạo vector giả lập bằng hàm sinh số ngẫu nhiên (random/hash mock vectors) hoặc dùng biểu diễn từ khóa TF-IDF để thay thế cho mô hình semantic embedding bắt buộc.\n\nĐiều 4.2. Quy tắc cấm âm thầm chuyển đổi dự phòng (No Silent Fallback) khi lỗi kết nối: Khi dịch vụ API hoặc mô hình Embedding cục bộ gặp lỗi xác thực, hết hạn mức (quota exceeded), mất kết nối mạng hoặc thiếu"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p06_fix_03",
+          "char_len": 500,
+          "text": "mức (quota exceeded), mất kết nối mạng hoặc thiếu thư viện, hệ thống bắt buộc phải dừng thực thi và thông báo lỗi tường minh (fail-fast with explicit exception). Tuyệt đối không được âm thầm bắt ngoại lệ rồi trả về vector toàn số 0 hoặc vector ngẫu nhiên làm sai lệch kết quả đánh giá benchmark.\n\nĐiều 4.3. Tính nhất quán giữa biểu diễn tài liệu (Document) và biểu diễn câu hỏi (Query): Nhóm phát triển phải giữ nguyên cùng một mô hình Embedding, cùng phiên bản và cùng số chiều vector xuyên suốt tất"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p06_para_02",
+          "char_len": 526,
+          "text": "Phần 4. Chính sách Lựa chọn Mô hình Embedding và Kiểm soát Kết nối API\nĐiều 4.2. Quy tắc cấm âm thầm chuyển đổi dự phòng (No Silent Fallback) khi lỗi kết nối: Khi dịch vụ API hoặc mô hình Embedding cục bộ gặp lỗi xác thực, hết hạn mức (quota exceeded), mất kết nối mạng hoặc thiếu thư viện, hệ thống bắt buộc phải dừng thực thi và thông báo lỗi tường minh (fail-fast with explicit exception). Tuyệt đối không được âm thầm bắt ngoại lệ rồi trả về vector toàn số 0 hoặc vector ngẫu nhiên làm sai lệch kết quả đánh giá benchmark."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p06_para_02",
+          "char_len": 526,
+          "text": "Phần 4. Chính sách Lựa chọn Mô hình Embedding và Kiểm soát Kết nối API\nĐiều 4.2. Quy tắc cấm âm thầm chuyển đổi dự phòng (No Silent Fallback) khi lỗi kết nối: Khi dịch vụ API hoặc mô hình Embedding cục bộ gặp lỗi xác thực, hết hạn mức (quota exceeded), mất kết nối mạng hoặc thiếu thư viện, hệ thống bắt buộc phải dừng thực thi và thông báo lỗi tường minh (fail-fast with explicit exception). Tuyệt đối không được âm thầm bắt ngoại lệ rồi trả về vector toàn số 0 hoặc vector ngẫu nhiên làm sai lệch kết quả đánh giá benchmark."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_05",
+    "page_id": "ai-governance-2026_p07",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 7,
+    "section": "danh_gia_rag_benchmark",
+    "anchor_clause": "Điều 5.2. Định nghĩa chuẩn chỉ số Hit@1 và Evidence Hit@3: Một kết quả truy xuất (chunk) chỉ được tính là một lần trúng đích (Hit) khi chunk đó đồng thời thuộc đúng tài liệu nguồn và số trang chuẩn (gold_source_id, gold_page) VÀ văn bản của chunk chứa đầy đủ nội dung đoạn bằng chứng chuẩn (evidence_quote) hoặc đoạn bằng chứng tương đương đã được xác minh. Nếu đoạn bằng chứng bị cắt đứt qua hai chunk khác nhau khiến không một chunk đơn lẻ nào chứa đủ điều kiện trả lời, hệ thống phải ghi nhận là trường hợp lỗi chia cắt bằng chứng.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p07_fix_02",
+          "char_len": 500,
+          "text": "được phân tách cố định trước khi chạy thí nghiệm thành tối thiểu 15 câu thuộc tập phát triển (dev split) và tối thiểu 5 câu thuộc tập kiểm thử độc lập (test split). Tập câu hỏi bắt buộc phải có ít nhất 3 câu kiểm tra bộ lọc metadata (metadata filter), trong đó có ít nhất 1 câu nằm ở tập test.\n\nĐiều 5.2. Định nghĩa chuẩn chỉ số Hit@1 và Evidence Hit@3: Một kết quả truy xuất (chunk) chỉ được tính là một lần trúng đích (Hit) khi chunk đó đồng thời thuộc đúng tài liệu nguồn và số trang chuẩn (gold_s"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p07_fix_03",
+          "char_len": 499,
+          "text": "huộc đúng tài liệu nguồn và số trang chuẩn (gold_source_id, gold_page) VÀ văn bản của chunk chứa đầy đủ nội dung đoạn bằng chứng chuẩn (evidence_quote) hoặc đoạn bằng chứng tương đương đã được xác minh. Nếu đoạn bằng chứng bị cắt đứt qua hai chunk khác nhau khiến không một chunk đơn lẻ nào chứa đủ điều kiện trả lời, hệ thống phải ghi nhận là trường hợp lỗi chia cắt bằng chứng.\n\nĐiều 5.3. Ngưỡng nghiệm thu chất lượng truy xuất trước khi đưa lên môi trường Production: Đối với các hệ thống tra cứu"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p07_para_02",
+          "char_len": 614,
+          "text": "Phần 5. Quy chuẩn Kiểm thử Truy xuất (Retrieval Benchmark) và Ngưỡng Nghiệm thu\nĐiều 5.2. Định nghĩa chuẩn chỉ số Hit@1 và Evidence Hit@3: Một kết quả truy xuất (chunk) chỉ được tính là một lần trúng đích (Hit) khi chunk đó đồng thời thuộc đúng tài liệu nguồn và số trang chuẩn (gold_source_id, gold_page) VÀ văn bản của chunk chứa đầy đủ nội dung đoạn bằng chứng chuẩn (evidence_quote) hoặc đoạn bằng chứng tương đương đã được xác minh. Nếu đoạn bằng chứng bị cắt đứt qua hai chunk khác nhau khiến không một chunk đơn lẻ nào chứa đủ điều kiện trả lời, hệ thống phải ghi nhận là trường hợp lỗi chia cắt bằng chứng."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p07_para_02",
+          "char_len": 614,
+          "text": "Phần 5. Quy chuẩn Kiểm thử Truy xuất (Retrieval Benchmark) và Ngưỡng Nghiệm thu\nĐiều 5.2. Định nghĩa chuẩn chỉ số Hit@1 và Evidence Hit@3: Một kết quả truy xuất (chunk) chỉ được tính là một lần trúng đích (Hit) khi chunk đó đồng thời thuộc đúng tài liệu nguồn và số trang chuẩn (gold_source_id, gold_page) VÀ văn bản của chunk chứa đầy đủ nội dung đoạn bằng chứng chuẩn (evidence_quote) hoặc đoạn bằng chứng tương đương đã được xác minh. Nếu đoạn bằng chứng bị cắt đứt qua hai chunk khác nhau khiến không một chunk đơn lẻ nào chứa đủ điều kiện trả lời, hệ thống phải ghi nhận là trường hợp lỗi chia cắt bằng chứng."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_06",
+    "page_id": "ai-governance-2026_p08",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 8,
+    "section": "luu_tru_va_xoa_du_lieu",
+    "anchor_clause": "Điều 6.2. Quy trình dọn dẹp các chunk lỗi thời khi tài liệu nguồn thay đổi phiên bản: Khi một tài liệu nguồn được cập nhật nội dung hoặc rút bớt số trang so với lần nạp trước, thao tác nạp lại (upsert) của từng chiến lược bắt buộc phải xóa bỏ toàn bộ các chunk cũ thuộc tài liệu đó mà không còn tồn tại trong danh sách chunk mới trước hoặc ngay trong giao dịch cập nhật, nhằm ngăn chặn hiện tượng truy xuất phải thông tin đã hết hiệu lực (stale/orphan chunks).",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p08_fix_02",
+          "char_len": 500,
+          "text": "mã chiến lược, mã tài liệu, số trang và thứ tự chunk (hoặc mã băm nội dung). Khi chạy nạp lại (re-ingest) cùng một phiên bản tài liệu vào cùng một chiến lược, số lượng bản ghi trong Vector Store phải giữ nguyên tuyệt đối, không được sinh thêm bản ghi trùng lặp.\n\nĐiều 6.2. Quy trình dọn dẹp các chunk lỗi thời khi tài liệu nguồn thay đổi phiên bản: Khi một tài liệu nguồn được cập nhật nội dung hoặc rút bớt số trang so với lần nạp trước, thao tác nạp lại (upsert) của từng chiến lược bắt buộc phải x"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p08_fix_03",
+          "char_len": 500,
+          "text": "p lại (upsert) của từng chiến lược bắt buộc phải xóa bỏ toàn bộ các chunk cũ thuộc tài liệu đó mà không còn tồn tại trong danh sách chunk mới trước hoặc ngay trong giao dịch cập nhật, nhằm ngăn chặn hiện tượng truy xuất phải thông tin đã hết hiệu lực (stale/orphan chunks).\n\nĐiều 6.3. Thời hạn lưu trữ nhật ký truy xuất (Query Trace) và xóa dữ liệu hết hạn: Nhật ký truy xuất đầy đủ (bao gồm câu hỏi, danh sách top-3 chunk ID, điểm tương đồng cosine, metadata và văn bản chunk) phải được lưu trữ phục"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p08_para_02",
+          "char_len": 533,
+          "text": "Phần 6. Vòng đời Lưu trữ Query Trace, Nạp lại Chống trùng và Xóa Dữ liệu\nĐiều 6.2. Quy trình dọn dẹp các chunk lỗi thời khi tài liệu nguồn thay đổi phiên bản: Khi một tài liệu nguồn được cập nhật nội dung hoặc rút bớt số trang so với lần nạp trước, thao tác nạp lại (upsert) của từng chiến lược bắt buộc phải xóa bỏ toàn bộ các chunk cũ thuộc tài liệu đó mà không còn tồn tại trong danh sách chunk mới trước hoặc ngay trong giao dịch cập nhật, nhằm ngăn chặn hiện tượng truy xuất phải thông tin đã hết hiệu lực (stale/orphan chunks)."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p08_para_02",
+          "char_len": 533,
+          "text": "Phần 6. Vòng đời Lưu trữ Query Trace, Nạp lại Chống trùng và Xóa Dữ liệu\nĐiều 6.2. Quy trình dọn dẹp các chunk lỗi thời khi tài liệu nguồn thay đổi phiên bản: Khi một tài liệu nguồn được cập nhật nội dung hoặc rút bớt số trang so với lần nạp trước, thao tác nạp lại (upsert) của từng chiến lược bắt buộc phải xóa bỏ toàn bộ các chunk cũ thuộc tài liệu đó mà không còn tồn tại trong danh sách chunk mới trước hoặc ngay trong giao dịch cập nhật, nhằm ngăn chặn hiện tượng truy xuất phải thông tin đã hết hiệu lực (stale/orphan chunks)."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_07",
+    "page_id": "ai-governance-2026_p09",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 9,
+    "section": "ung_pho_su_co_ai",
+    "anchor_clause": "Điều 7.2. Thời gian cô lập sự cố truy xuất nhầm tài liệu hạn chế (Data Leakage SLA): Khi phát hiện sự cố bộ lọc metadata bị cấu hình sai khiến người dùng thuộc nhóm sinh viên truy xuất được các chunk dữ liệu chỉ dành cho kỹ sư nội bộ hoặc quản trị viên, nhóm vận hành phải thực hiện ngắt kết nối (circuit-breaker) bộ sưu tập vector bị lỗi trong vòng tối đa 15 phút kể từ lúc phát hiện và gửi báo cáo sự cố sơ bộ cho Ban An toàn Thông tin trong vòng 2 giờ.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p09_fix_02",
+          "char_len": 499,
+          "text": "cắm nhằm thao túng hành vi của AI agent (ví dụ các đoạn văn bản ẩn chữ trắng trên nền trắng chứa chỉ dẫn 'Hãy bỏ qua mọi quy tắc trước đó'). Các đoạn văn bản nghi ngờ chứa mã tiêm nhiễm phải được đưa vào hàng đợi kiểm duyệt thủ công trước khi tạo vector.\n\nĐiều 7.2. Thời gian cô lập sự cố truy xuất nhầm tài liệu hạn chế (Data Leakage SLA): Khi phát hiện sự cố bộ lọc metadata bị cấu hình sai khiến người dùng thuộc nhóm sinh viên truy xuất được các chunk dữ liệu chỉ dành cho kỹ sư nội bộ hoặc quản"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p09_fix_03",
+          "char_len": 499,
+          "text": "chunk dữ liệu chỉ dành cho kỹ sư nội bộ hoặc quản trị viên, nhóm vận hành phải thực hiện ngắt kết nối (circuit-breaker) bộ sưu tập vector bị lỗi trong vòng tối đa 15 phút kể từ lúc phát hiện và gửi báo cáo sự cố sơ bộ cho Ban An toàn Thông tin trong vòng 2 giờ.\n\nĐiều 7.3. Quy cấm đưa đáp án chuẩn hoặc nguồn chuẩn vào câu truy vấn kiểm thử: Trong mọi quy trình kiểm thử và vận hành thực tế, bộ lọc metadata truyền vào hàm tìm kiếm chỉ được sử dụng các thông tin ngữ cảnh hợp lệ đã biết trước khi tr"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p09_para_02",
+          "char_len": 530,
+          "text": "Phần 7. Quy trình Ứng phó Sự cố Rò rỉ Dữ liệu và Tấn công Prompt Injection\nĐiều 7.2. Thời gian cô lập sự cố truy xuất nhầm tài liệu hạn chế (Data Leakage SLA): Khi phát hiện sự cố bộ lọc metadata bị cấu hình sai khiến người dùng thuộc nhóm sinh viên truy xuất được các chunk dữ liệu chỉ dành cho kỹ sư nội bộ hoặc quản trị viên, nhóm vận hành phải thực hiện ngắt kết nối (circuit-breaker) bộ sưu tập vector bị lỗi trong vòng tối đa 15 phút kể từ lúc phát hiện và gửi báo cáo sự cố sơ bộ cho Ban An toàn Thông tin trong vòng 2 giờ."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p09_para_02",
+          "char_len": 530,
+          "text": "Phần 7. Quy trình Ứng phó Sự cố Rò rỉ Dữ liệu và Tấn công Prompt Injection\nĐiều 7.2. Thời gian cô lập sự cố truy xuất nhầm tài liệu hạn chế (Data Leakage SLA): Khi phát hiện sự cố bộ lọc metadata bị cấu hình sai khiến người dùng thuộc nhóm sinh viên truy xuất được các chunk dữ liệu chỉ dành cho kỹ sư nội bộ hoặc quản trị viên, nhóm vận hành phải thực hiện ngắt kết nối (circuit-breaker) bộ sưu tập vector bị lỗi trong vòng tối đa 15 phút kể từ lúc phát hiện và gửi báo cáo sự cố sơ bộ cho Ban An toàn Thông tin trong vòng 2 giờ."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_08",
+    "page_id": "ai-governance-2026_p10",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 10,
+    "section": "cap_hat_tai_nghiem_thu",
+    "anchor_clause": "Điều 8.2. Quy trình chuyển đổi mô hình Embedding không gián đoạn (Blue-Green Re-indexing): Khi nâng cấp sang một mô hình Embedding mới hoặc thay đổi tham số kích thước chunk trên hệ thống thực tế, nhóm kỹ thuật không được ghi đè trực tiếp lên bảng index đang phục vụ mà phải khởi tạo một bảng hoặc collection mới song song (Blue-Green Index), chạy lại toàn bộ bộ kiểm thử hồi quy 20 câu hỏi và chỉ chuyển luồng truy vấn sang index mới sau khi xác nhận chỉ số Evidence Hit@3 không bị suy giảm.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p10_fix_02",
+          "char_len": 499,
+          "text": ": cặp so sánh giữa Chiến lược A và Chiến lược B chỉ được thay đổi phương pháp chia chunk (ví dụ từ chia theo kích thước cố định sang chia theo cấu trúc đoạn văn) trong khi giữ nguyên tập tài liệu, metadata và không bật bộ lọc; cặp so sánh giữa Chiến lược B và Chiến lược C giữ nguyên phương pháp chia chunk của B và chỉ bổ sung duy nhất cơ chế lọc theo metadata khi câu hỏi có yêu cầu lọc.\n\nĐiều 8.2. Quy trình chuyển đổi mô hình Embedding không gián đoạn (Blue-Green Re-indexing): Khi nâng cấp sang"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p10_fix_03",
+          "char_len": 499,
+          "text": "đoạn (Blue-Green Re-indexing): Khi nâng cấp sang một mô hình Embedding mới hoặc thay đổi tham số kích thước chunk trên hệ thống thực tế, nhóm kỹ thuật không được ghi đè trực tiếp lên bảng index đang phục vụ mà phải khởi tạo một bảng hoặc collection mới song song (Blue-Green Index), chạy lại toàn bộ bộ kiểm thử hồi quy 20 câu hỏi và chỉ chuyển luồng truy vấn sang index mới sau khi xác nhận chỉ số Evidence Hit@3 không bị suy giảm.\n\nĐiều 8.3. Chốt tiêu chí lựa chọn chiến lược trước khi mở tập kiểm"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p10_para_02",
+          "char_len": 565,
+          "text": "Phần 8. Kiểm thử Hồi quy (Regression Testing) và Quản lý Phiên bản Index\nĐiều 8.2. Quy trình chuyển đổi mô hình Embedding không gián đoạn (Blue-Green Re-indexing): Khi nâng cấp sang một mô hình Embedding mới hoặc thay đổi tham số kích thước chunk trên hệ thống thực tế, nhóm kỹ thuật không được ghi đè trực tiếp lên bảng index đang phục vụ mà phải khởi tạo một bảng hoặc collection mới song song (Blue-Green Index), chạy lại toàn bộ bộ kiểm thử hồi quy 20 câu hỏi và chỉ chuyển luồng truy vấn sang index mới sau khi xác nhận chỉ số Evidence Hit@3 không bị suy giảm."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p10_para_02",
+          "char_len": 565,
+          "text": "Phần 8. Kiểm thử Hồi quy (Regression Testing) và Quản lý Phiên bản Index\nĐiều 8.2. Quy trình chuyển đổi mô hình Embedding không gián đoạn (Blue-Green Re-indexing): Khi nâng cấp sang một mô hình Embedding mới hoặc thay đổi tham số kích thước chunk trên hệ thống thực tế, nhóm kỹ thuật không được ghi đè trực tiếp lên bảng index đang phục vụ mà phải khởi tạo một bảng hoặc collection mới song song (Blue-Green Index), chạy lại toàn bộ bộ kiểm thử hồi quy 20 câu hỏi và chỉ chuyển luồng truy vấn sang index mới sau khi xác nhận chỉ số Evidence Hit@3 không bị suy giảm."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_09",
+    "page_id": "ai-governance-2026_p11",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 11,
+    "section": "giam_sat_chi_phi_hieu_nang",
+    "anchor_clause": "Điều 9.2. Đo lường thống kê phân bố Chunk và chi phí vận hành: Mọi lần chạy pipeline nạp dữ liệu đều phải tự động thống kê và lưu lại vào tệp kết quả các chỉ số định lượng cho từng chiến lược: tổng số lượng chunk sinh ra, độ dài chunk trung bình, độ dài ngắn nhất (min), độ dài dài nhất (max), tổng số ký tự, tổng thời gian thực thi (tính bằng giây) và chi phí tiền tệ thực tế phát sinh (ghi rõ 0 USD nếu sử dụng mô hình chạy cục bộ trên máy cá nhân).",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p11_fix_02",
+          "char_len": 499,
+          "text": "n cơ sở dữ liệu cục bộ, thời gian phản hồi của một truy vấn top-3 (không tính thời gian sinh câu trả lời của LLM) ở phân vị thứ 95 (P95 latency) không được vượt quá 150 mili-giây đối với mô hình cục bộ và không vượt quá 800 mili-giây khi phải gọi API tạo vector truy vấn qua mạng.\n\nĐiều 9.2. Đo lường thống kê phân bố Chunk và chi phí vận hành: Mọi lần chạy pipeline nạp dữ liệu đều phải tự động thống kê và lưu lại vào tệp kết quả các chỉ số định lượng cho từng chiến lược: tổng số lượng chunk sinh"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p11_fix_03",
+          "char_len": 500,
+          "text": "ợng cho từng chiến lược: tổng số lượng chunk sinh ra, độ dài chunk trung bình, độ dài ngắn nhất (min), độ dài dài nhất (max), tổng số ký tự, tổng thời gian thực thi (tính bằng giây) và chi phí tiền tệ thực tế phát sinh (ghi rõ 0 USD nếu sử dụng mô hình chạy cục bộ trên máy cá nhân).\n\nĐiều 9.3. Hạn mức ngân sách API thử nghiệm và cơ chế ngắt tự động: Đối với các dự án sử dụng dịch vụ Embedding trả phí theo số lượng token trên đám mây, hạn mức ngân sách tối đa cho mỗi môi trường phát triển cá nhân"
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p11_para_02",
+          "char_len": 528,
+          "text": "Phần 9. Giám sát Độ trễ Truy vấn (Latency SLA) và Hạn mức Chi phí Vector hóa\nĐiều 9.2. Đo lường thống kê phân bố Chunk và chi phí vận hành: Mọi lần chạy pipeline nạp dữ liệu đều phải tự động thống kê và lưu lại vào tệp kết quả các chỉ số định lượng cho từng chiến lược: tổng số lượng chunk sinh ra, độ dài chunk trung bình, độ dài ngắn nhất (min), độ dài dài nhất (max), tổng số ký tự, tổng thời gian thực thi (tính bằng giây) và chi phí tiền tệ thực tế phát sinh (ghi rõ 0 USD nếu sử dụng mô hình chạy cục bộ trên máy cá nhân)."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p11_para_02",
+          "char_len": 528,
+          "text": "Phần 9. Giám sát Độ trễ Truy vấn (Latency SLA) và Hạn mức Chi phí Vector hóa\nĐiều 9.2. Đo lường thống kê phân bố Chunk và chi phí vận hành: Mọi lần chạy pipeline nạp dữ liệu đều phải tự động thống kê và lưu lại vào tệp kết quả các chỉ số định lượng cho từng chiến lược: tổng số lượng chunk sinh ra, độ dài chunk trung bình, độ dài ngắn nhất (min), độ dài dài nhất (max), tổng số ký tự, tổng thời gian thực thi (tính bằng giây) và chi phí tiền tệ thực tế phát sinh (ghi rõ 0 USD nếu sử dụng mô hình chạy cục bộ trên máy cá nhân)."
+        }
+      ]
+    }
+  },
+  {
+    "position_id": "pos_10",
+    "page_id": "ai-governance-2026_p12",
+    "document_id": "ai-governance-2026",
+    "source": "data/pdfs/doc_03_ai_data_governance_2026.pdf",
+    "page": 12,
+    "section": "kiem_toan_tuan_thu",
+    "anchor_clause": "Điều 10.2. Yêu cầu công bố minh bạch sai số mẫu nhỏ và nguy cơ thiên lệch người chấm: Trong báo cáo kỹ thuật, tác giả thực hiện chấm điểm thủ công bắt buộc phải tuyên bố rõ tư cách người chấm là chính tác giả xây dựng pipeline (self-evaluation bias risk), giải thích lý do gán nhãn cho từng trường hợp điểm 0, 1, 2 và nêu rõ giới hạn thống kê của tập kiểm thử quy mô nhỏ (ví dụ với 5 câu test thì mỗi câu sai làm thay đổi tới 20% điểm phần trăm), tuyệt đối không suy rộng kết luận vượt ra ngoài phạm vi corpus đã thử nghiệm.",
+    "covering_chunks": {
+      "A": [
+        {
+          "chunk_id": "ai-governance-2026_p12_fix_02",
+          "char_len": 500,
+          "text": "văn bản, định kỳ mỗi quý (hoặc trong mỗi đợt báo cáo nghiệm thu), kỹ sư phụ trách phải thực hiện kiểm toán thủ công trên mẫu cố định: chấm điểm tính mạch lạc (Chunk Coherence) theo thang 0–2 trên cùng 10 vị trí nguồn đã chọn trước, kiểm tra độ chính xác của metadata trên 15 bản ghi top-3 của tập test (5 câu hỏi × 3 kết quả) và chấm chất lượng thông tin nền (Grounding Quality) theo thang 0–2 trên 5 câu test.\n\nĐiều 10.2. Yêu cầu công bố minh bạch sai số mẫu nhỏ và nguy cơ thiên lệch người chấm: Tr"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p12_fix_03",
+          "char_len": 500,
+          "text": "ai số mẫu nhỏ và nguy cơ thiên lệch người chấm: Trong báo cáo kỹ thuật, tác giả thực hiện chấm điểm thủ công bắt buộc phải tuyên bố rõ tư cách người chấm là chính tác giả xây dựng pipeline (self-evaluation bias risk), giải thích lý do gán nhãn cho từng trường hợp điểm 0, 1, 2 và nêu rõ giới hạn thống kê của tập kiểm thử quy mô nhỏ (ví dụ với 5 câu test thì mỗi câu sai làm thay đổi tới 20% điểm phần trăm), tuyệt đối không suy rộng kết luận vượt ra ngoài phạm vi corpus đã thử nghiệm.\n\nĐiều 10.3. C"
+        },
+        {
+          "chunk_id": "ai-governance-2026_p12_fix_04",
+          "char_len": 478,
+          "text": "ngoài phạm vi corpus đã thử nghiệm.\n\nĐiều 10.3. Chế tài xử lý hành vi làm giả số liệu hoặc chỉnh sửa tập Test sau khi xem kết quả: Hành vi tự điền số liệu chưa từng chạy thực tế, sửa nội dung câu hỏi hoặc đáp án của tập test sau khi đã xem kết quả truy xuất để làm đẹp báo cáo (test set snooping/tuning without disclosure), hoặc nộp khóa bí mật (.env) lên kho mã nguồn chung sẽ bị hủy toàn bộ kết quả nghiệm thu kỹ thuật và đình chỉ quyền truy cập hạ tầng dữ liệu trong 6 tháng."
+        }
+      ],
+      "B": [
+        {
+          "chunk_id": "ai-governance-2026_p12_para_02",
+          "char_len": 597,
+          "text": "Phần 10. Kiểm toán Định kỳ Hệ thống Tri thức AI và Chế tài Xử lý Vi phạm\nĐiều 10.2. Yêu cầu công bố minh bạch sai số mẫu nhỏ và nguy cơ thiên lệch người chấm: Trong báo cáo kỹ thuật, tác giả thực hiện chấm điểm thủ công bắt buộc phải tuyên bố rõ tư cách người chấm là chính tác giả xây dựng pipeline (self-evaluation bias risk), giải thích lý do gán nhãn cho từng trường hợp điểm 0, 1, 2 và nêu rõ giới hạn thống kê của tập kiểm thử quy mô nhỏ (ví dụ với 5 câu test thì mỗi câu sai làm thay đổi tới 20% điểm phần trăm), tuyệt đối không suy rộng kết luận vượt ra ngoài phạm vi corpus đã thử nghiệm."
+        }
+      ],
+      "C": [
+        {
+          "chunk_id": "ai-governance-2026_p12_para_02",
+          "char_len": 597,
+          "text": "Phần 10. Kiểm toán Định kỳ Hệ thống Tri thức AI và Chế tài Xử lý Vi phạm\nĐiều 10.2. Yêu cầu công bố minh bạch sai số mẫu nhỏ và nguy cơ thiên lệch người chấm: Trong báo cáo kỹ thuật, tác giả thực hiện chấm điểm thủ công bắt buộc phải tuyên bố rõ tư cách người chấm là chính tác giả xây dựng pipeline (self-evaluation bias risk), giải thích lý do gán nhãn cho từng trường hợp điểm 0, 1, 2 và nêu rõ giới hạn thống kê của tập kiểm thử quy mô nhỏ (ví dụ với 5 câu test thì mỗi câu sai làm thay đổi tới 20% điểm phần trăm), tuyệt đối không suy rộng kết luận vượt ra ngoài phạm vi corpus đã thử nghiệm."
+        }
+      ]
+    }
+  }
+]

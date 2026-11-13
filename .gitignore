@@ -1,5 +1,7 @@
 __pycache__/
 .venv/
+.cache/
+starter/.cache/
 .env
 *.pyc
 
@@ -8,3 +10,5 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+results/qdrant_storage/
+starter/results/qdrant_storage/
